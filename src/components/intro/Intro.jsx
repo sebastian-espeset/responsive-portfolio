@@ -20,7 +20,7 @@ export default function Intro() {
     return (
         
         <div className="intro" id="intro">
-            <div className="left">
+            <div className="left"> 
                 <div className="imgContainer">
                     <img src="assets/DSC_2743.jpg" alt="" />
                 </div>
@@ -31,9 +31,9 @@ export default function Intro() {
                     <h1> I'm Sebastian Espeset</h1>
                     <h3> Full stack <span ref={textRef}></span></h3>
                 </div>
-                <a href="#portfolio">
+                {/* Leaving this commented, may add in the future, don't like the look <a href="#portfolio">
                     <KeyboardArrowDownIcon className="icon"/>
-                </a>
+                </a> */}
             </div>
         </div>
     )
