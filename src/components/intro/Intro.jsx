@@ -1,7 +1,24 @@
 import "./intro.scss"
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import {useEffect, useRef} from "react"; 
+import {init} from "ityped"; 
 
 export default function Intro() {
+    const textRef=useRef()
+    
+    useEffect(() => {
+        init(
+            textRef.current,{
+                showCursor:true,
+                backDelay:1500,
+                backSpeed:60, 
+                strings:["developer ","shredder ","mistake maker "]
+            }
+        )
+    }, []);
+
     return (
+        
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
@@ -10,10 +27,13 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2> Oh hi there</h2>
-                    <h2> I'm Sebastian Espeset</h2>
-                    <h3> Full stack web developer</h3>
+                    <h2> Oh hi there!</h2>
+                    <h1> I'm Sebastian Espeset</h1>
+                    <h3> Full stack <span ref={textRef}></span></h3>
                 </div>
+                <a href="#portfolio">
+                    <KeyboardArrowDownIcon className="icon"/>
+                </a>
             </div>
         </div>
     )

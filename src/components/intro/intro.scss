@@ -22,6 +22,48 @@
     }
     .right{
         flex:0.5;
+        .wrapper{
+             width:100%;
+             padding-left: 50px;
+             display:flex;
+             flex-direction: column;
+             justify-content: center;
+             h1{
+                font-size: 50px;
+                margin: 10px 0;
+
+             }
+             h2{
+                font-size: 35px;
+
+             }
+             h3{
+                font-size: 30px;
+                span{
+                    font-size: 30px;
+                    color:crimson;
+                }
+                .ityped-cursor{
+                    animation:blink 1s infinite;
+                }
+                @keyframes blink{
+                    50%{
+                        opacity: 1;
+                    }
+                    90%{
+                        opacity:0;
+                    }
+                }
+             }
+             a{
+                 position: absolute;
+                 bottom: 10px;
+                
+                 icon{
+                    font-size: 800px;
+                }
+             }
+        }
 
     }
 }
