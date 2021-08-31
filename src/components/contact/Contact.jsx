@@ -7,7 +7,8 @@ export default function Contact() {
     const handleSubmit=(e)=>{
         e.preventDefault();
         setMessage(true)
-    }
+    };
+
     return (
         <div className="contact" id="contact">
             <div className="left">
@@ -24,4 +25,4 @@ export default function Contact() {
             </div>
         </div>
     )
-}
+};
