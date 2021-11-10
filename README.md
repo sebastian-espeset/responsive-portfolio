@@ -1,2 +1,2 @@
 # Sebastian espeset's portfolio site
-## NOW RESPONSIVE!!
+## NOW RESPONSIVE!! (how fun)
