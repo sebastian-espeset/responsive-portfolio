@@ -8,16 +8,16 @@ export default function Topbar({menuOpen,setMenuOpen}) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            Smashing.
+            S m a s h i n g.
           </a>
-          <div className="itemContainer">
+          {/* Removining temporarily <div className="itemContainer">
               <NightsStay className="icon"/>
               <span>505-670-0005</span>
           </div>
           <div className="itemContainer">
               <Mail className="icon"/>
             <span> sebastian.c.espeset@gmail.com</span>
-          </div>
+          </div> */}
         </div>
         <div className="right">
             <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>

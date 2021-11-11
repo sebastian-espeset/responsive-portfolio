@@ -1,0 +1,40 @@
+.project{
+    display: flex;
+    flex-direction:row ;
+    justify-content:space-evenly;
+    // border: solid 4px red;
+}
+
+.image{
+    // border: green 1px solid;
+    display: flex;
+    padding: 10px;
+    margin-left: 50px;
+    width: 85%;
+    height: 90%;
+}
+
+.description{
+    width: 100%;
+    margin-right:20px;
+    // border:solid white 1px;
+    display: flex;
+    flex-direction:column ;
+    .title{
+        width: 60%;
+        overflow: hidden;
+        height: 10%;
+        // margin:5px 5px 5px;
+        // border: solid black 2px;
+    }
+    .summary{
+        width:80%;
+        height: 80%;
+        margin:5px 5px 5px;
+        // border: solid black 2px;
+        
+        p{
+            font-size: 30px;
+        }
+    }
+}

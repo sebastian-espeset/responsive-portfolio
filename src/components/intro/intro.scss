@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: white;
+  background-color: $greenishBackground;
   display: flex;
 
   @include mobile{
@@ -70,12 +70,13 @@
       }
       h3 {
         font-size: 30px;
+        margin-left: 45px;
         @include mobile{
           font-size: 20px;
         }
         span {
           font-size: 30px;
-          color: crimson;
+          color: whitesmoke;
           @include mobile{
             font-size: 20px;
           }
