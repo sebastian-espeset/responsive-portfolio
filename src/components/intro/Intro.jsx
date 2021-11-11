@@ -31,7 +31,7 @@ export default function Intro() {
             Full stack <span ref={textRef}></span>
           </h3>
         </div>
-        <p style={{ "margin-top": "10px", "font-size": "50px" }}>
+        <p style={{ "margin-top": "10px","margin-left":"45px","font-size": "20px" }}>
           {" "}
           This portfolio site is a work in progress. <br></br>
           <p>Please note, none of the projects currently listed are real.</p>
