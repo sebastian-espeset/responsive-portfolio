@@ -1,6 +1,9 @@
 {
   "name": "responsive-portfolio",
   "version": "0.1.0",
+  "engine":{
+    "node":"14.6.0"
+  },
   "private": false,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
