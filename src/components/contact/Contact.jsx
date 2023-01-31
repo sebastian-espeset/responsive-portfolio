@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./contact.scss";
 import { useState } from "react";
 import emailjs from "emailjs-com";
@@ -8,8 +8,7 @@ dotenv.config();
 
 //configure emailjs
 
-const userId = process.env.REACT_APP_EMAILJSID
-
+const userId = process.env.REACT_APP_EMAILJSID;
 
 const initialValues = {
   from_name: "",
@@ -17,20 +16,24 @@ const initialValues = {
   message: "",
 };
 export default function Contact() {
-
   const [message, setMessage] = useState(false);
   const [formData, setFormData] = useState(initialValues);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     setMessage(true);
 
-    emailjs.send('from_portfolio_site','template_1m29p6p',formData,userId)
-      .then(res=>{
-        setFormData(initialValues)
-      }).catch(err=>{
-        console.log(err)
+    emailjs
+      .send("from_portfolio_site", "template_1m29p6p", formData, userId)
+      .then((res) => {
+        setTimeout(() => {
+          setMessage(false);
+        }, 2000);
+        e.target.reset();
+      })
+      .catch((err) => {
+        console.log(err);
       });
   };
 
@@ -67,7 +70,9 @@ export default function Contact() {
             placeholder="Say hi to me!"
           ></textarea>
           <button type="submit">Send</button>
-          {message && <span>Thanks, I'll reply soon </span>}
+          <div className="submissionmessage">
+            {message && <span>Thanks, I'll reply soon </span>}
+          </div>
         </form>
       </div>
     </div>
