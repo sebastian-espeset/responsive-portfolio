@@ -44,27 +44,36 @@
     .wrapper {
       width: 100%;
       padding-left: 50px;
+      padding-right: 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
+    .paragraph{
+      margin-top: 20px;
+      font-size: large;
+      @include mobile{
+        text-align: center;
+        margin-top: 20px;
+        padding: 5px 5px 5px 5px;
+      }
+    }
       @include mobile{
         padding-left:0;
         align-items: center;
-
       }
       h1 {
         font-size: 50px;
         margin: 10px 0;
         
         @include mobile{
-          font-size: 40px;
+          font-size: 30px;
 
         }
       }
       h2 {
         font-size: 35px;
         @include mobile{
+          margin-top: 20px;
           font-size: 20px;
         }
       }

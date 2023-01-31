@@ -6,21 +6,21 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import "./app.scss";
-import {useState} from 'react';
+import { useState } from "react";
 
 function App() {
-  const [menuOpen,setMenuOpen]=useState(false); 
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="app">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} ></Menu>
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Menu>
       <div className="sections">
-        <Intro/>
-        <Portfolio/>
-        <Works/>
-        <Testimonials/>
-        <Contact/>
+        <Intro />
+        {/* <Portfolio style/>
+        <Works style/>
+        <Testimonials /> */}
+        <Contact />
       </div>
     </div>
   );
