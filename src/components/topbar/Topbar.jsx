@@ -1,5 +1,5 @@
 import "./topbar.scss";
-import { NightsStay, Mail } from "@material-ui/icons";
+import { Mail } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (

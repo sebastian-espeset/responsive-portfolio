@@ -27,12 +27,29 @@ export default function Menu({ menuOpen, setMenuOpen }) {
             Github
           </a>
         </li>
-        {/* <li onClick={() => setMenuOpen(!menuOpen)}>
-          <a href="#testimonials"> Testimonials</a>
+        <li onClick={() => setMenuOpen(!menuOpen)}>
+          <a
+            href="https://docs.google.com/document/d/1_otMS41KNIMntZMQCfaIk7LGD1UO_mVBPVE-uF3h48M/edit?usp=sharing"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {" "}
+            Resume
+          </a>
+        </li>
+        <li onClick={() => setMenuOpen(!menuOpen)}>
+          <a
+            href="https://www.linkedin.com/in/seba-e/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            {" "}
+            Linkedin
+          </a>
         </li>
         <li onClick={() => setMenuOpen(!menuOpen)}>
           <a href="#contact"> Contact</a>
-        </li> */}
+        </li>
       </ul>
     </div>
   );

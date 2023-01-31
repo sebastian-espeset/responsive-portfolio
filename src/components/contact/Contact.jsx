@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./contact.scss";
 import { useState } from "react";
 import emailjs from "emailjs-com";
