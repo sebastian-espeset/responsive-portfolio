@@ -38,8 +38,7 @@ export default function Intro() {
           </h3>
           <div className="paragraph">
             <p>
-              Bootcamper. Not 10x but slow and steady. Seeking the poetry in
-              code.
+              Bootcamper. Not 10x but slow and steady. Seeking poetry in code.
             </p>
           </div>
         </div>

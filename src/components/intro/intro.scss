@@ -84,7 +84,7 @@
         }
         span {
           font-size: 30px;
-          color: crimson;
+          color: $mainColor;
           @include mobile{
             font-size: 20px;
           }
