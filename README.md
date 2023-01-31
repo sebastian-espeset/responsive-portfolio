@@ -1,2 +1,2 @@
-# Sebastian espeset's portfolio site
-## NOW RESPONSIVE!! (how fun)
+# Sebastian espeset's responsive portfolio site
+# React | Sass | Material UI | Ityped for fun text flavor
