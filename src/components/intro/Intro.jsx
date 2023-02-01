@@ -37,7 +37,7 @@ export default function Intro() {
             Full stack <span ref={textRef}></span>
           </h3>
           <div className="paragraph">
-            <p>Bootcamper. Intentionally crafted | Thoughtfully made. </p>
+            <p>Intentionally crafted & thoughtfully made. </p>
           </div>
         </div>
       </div>
