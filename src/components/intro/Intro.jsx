@@ -37,9 +37,7 @@ export default function Intro() {
             Full stack <span ref={textRef}></span>
           </h3>
           <div className="paragraph">
-            <p>
-              Bootcamper. Not 10x but slow and steady. Seeking poetry in code.
-            </p>
+            <p>Bootcamper. Intentionally crafted | Thoughtfully made. </p>
           </div>
         </div>
       </div>
