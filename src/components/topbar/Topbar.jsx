@@ -1,7 +1,11 @@
 import "./topbar.scss";
-import { Mail } from "@material-ui/icons";
+import { Mail, NightsStay } from "@material-ui/icons";
 
-export default function Topbar({ menuOpen, setMenuOpen }) {
+export default function Topbar({ menuOpen, setMenuOpen, isDark, setIsDark }) {
+  const handleDarkMode = () => {
+    setIsDark(!isDark);
+  };
+
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
@@ -9,10 +13,15 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <a href="#intro" className="logo">
             Smashing.
           </a>
-          {/* <div className="itemContainer">
-              <NightsStay className="icon"/>
-              <span>505-670-0005</span>
-          </div> */}
+          <div className="itemContainer">
+            <NightsStay
+              className="nightstay"
+              onClick={handleDarkMode}
+              style={{
+                display: menuOpen ? "none" : "flex",
+              }}
+            />
+          </div>
           <div className="itemContainer">
             <Mail className="icon" />
             <span> sebastian.c.espeset@gmail.com</span>

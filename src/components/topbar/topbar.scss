@@ -25,21 +25,31 @@
                 text-decoration: none;
                 color:inherit;
                 margin-right: 40px;
+                @include mobile{
+                    margin-right: 10px;;
+                }
             }
             .itemContainer{
                 display:flex;
                 align-items: center;
                 margin-left: 30px;
-                @include mobile{
-                    display:none;
+                .nightstay{
+                    font-size: 30px;
+                    margin: none;
                 }
                 .icon{
-                    font-size: 18px;
+                    font-size: 30px;
                     margin-right: 5px;
+                    @include mobile{
+                        display: none;
+                    }
                 }
                 span{
-                    font-size: 15px;
+                    font-size: 20px;
                     font-weight: 500;
+                    @include mobile{
+                        display:none;
+                    }
                 }
             }
         }
