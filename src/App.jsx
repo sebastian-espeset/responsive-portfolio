@@ -24,7 +24,7 @@ function App() {
       />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Menu>
       <div className="sections">
-        <Intro />
+        <Intro isDark={isDark} />
         <Contact />
       </div>
     </div>

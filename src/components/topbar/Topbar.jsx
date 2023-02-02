@@ -14,13 +14,7 @@ export default function Topbar({ menuOpen, setMenuOpen, isDark, setIsDark }) {
             Smashing.
           </a>
           <div className="itemContainer">
-            <NightsStay
-              className="nightstay"
-              onClick={handleDarkMode}
-              style={{
-                display: menuOpen ? "none" : "flex",
-              }}
-            />
+            <NightsStay className="nightstay" onClick={handleDarkMode} />
           </div>
           <div className="itemContainer">
             <Mail className="icon" />

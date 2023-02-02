@@ -3,7 +3,7 @@ import "./intro.scss";
 import { useEffect, useRef } from "react";
 import { init } from "ityped";
 
-export default function Intro() {
+export default function Intro({ isDark }) {
   const textRef = useRef();
 
   useEffect(() => {
@@ -25,7 +25,13 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/pickerimage.jpg" alt="" />
+          <img
+            src="assets/pickerimage.jpg"
+            alt=""
+            style={{
+              filter: isDark ? "invert(100%)" : "none",
+            }}
+          />
         </div>
       </div>
       <div className="right">
