@@ -15,7 +15,7 @@
   transition: all 1s ease;
 
   @include mobile {
-    width: 150px;
+    width: 200px;
   }
 
   &.active {
