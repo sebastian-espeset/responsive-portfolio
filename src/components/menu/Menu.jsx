@@ -29,7 +29,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         </li>
         <li onClick={() => setMenuOpen(!menuOpen)}>
           <a
-            href="https://docs.google.com/document/d/18dyuC2Tu9lcY6pSTPoOuksa23p-DJWxajSwfxKdMb7U/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1n1y-6cwlAnWHgwiK_v7okG2Q-rPGDbpX-SnY9RAppOg/edit?usp=sharing"
             target="_blank"
             rel="noreferrer noopener"
           >

@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .menu {
-  width: 250px;
+  width: 175px;
   height: 100vh;
   background-color: $mainColor;
   position: fixed;
@@ -15,7 +15,7 @@
   transition: all 1s ease;
 
   @include mobile {
-    width: 200px;
+    width: 150px;
   }
 
   &.active {
@@ -25,7 +25,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 100;
     color: white;
     width: 60%;

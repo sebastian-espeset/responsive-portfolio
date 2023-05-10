@@ -1,5 +1,5 @@
 import "./topbar.scss";
-import { Mail, NightsStay } from "@material-ui/icons";
+import { Mail, Brightness4 } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen, isDark, setIsDark }) {
   const handleDarkMode = () => {
@@ -14,7 +14,7 @@ export default function Topbar({ menuOpen, setMenuOpen, isDark, setIsDark }) {
             Smashing.
           </a>
           <div className="itemContainer">
-            <NightsStay className="nightstay" onClick={handleDarkMode} />
+            <Brightness4 className="brightness" onClick={handleDarkMode} />
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
