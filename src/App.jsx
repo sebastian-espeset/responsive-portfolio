@@ -1,5 +1,7 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
+import MaidenKingBandSite from "./components/portfolio/maidenKingBandSite/MaidenKingBandSite";
+import NewMexicoWellness from "./components/portfolio/newMexicoWellness/NewMexicoWellness";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import "./app.scss";
@@ -25,6 +27,8 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Menu>
       <div className="sections">
         <Intro isDark={isDark} />
+        <MaidenKingBandSite />
+        <NewMexicoWellness />
         <Contact />
       </div>
     </div>
